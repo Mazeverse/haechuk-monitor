@@ -17,8 +17,8 @@ EPL·라리가·세리에A·분데스리가·리그1·K리그 뉴스를 하나�
 2. 이 ZIP을 풀어 **폴더 내부 파일 전부**(app, components, lib, public, package.json 등)를 저장소 최상위에 업로드.
 3. [Vercel](https://vercel.com/new) → Add New Project → GitHub 저장소 선택.
 4. Framework: Next.js (자동 감지), Build Command: 기본값, Deploy.
-5. 완료된 `https://<프로젝트명>.vercel.app` 주소로 접속.
-6. 제휴 링크가 발급되면 Vercel Project → Settings → Environment Variables에 `NEXT_PUBLIC_AFFILIATE_URL` 추가 후 Redeploy.
+5. 배포 주소: https://haechuk-monitor-pasm-xi.vercel.app/
+6. 아틀레티코 마드리드 제휴 링크가 코드에 기본 적용되어 있습니다. 다른 링크로 바꾸려면 Vercel Project → Settings → Environment Variables에 `NEXT_PUBLIC_AFFILIATE_URL`을 추가하고 재배포하세요.
 
 ## 로컬 테스트
 ```bash
@@ -40,3 +40,9 @@ npm run dev
 - AI 번역/짧은 한국어 요약 (비용 제한, 이용허가 범위 검토)
 - 중복 기사 통합 및 공식 발표/루머 레이블
 - 구단별 관심 뉴스, 별도 K리그1/2 탭
+
+## 현재 적용된 사이트 / 제휴 링크
+- 웹사이트: https://haechuk-monitor-pasm-xi.vercel.app/
+- 트립닷컴 입장권 제휴: https://kr.trip.com/things-to-do/detail/109947208?Allianceid=4775205&SID=333720843&trip_sub1=해축모니터&trip_sub3=D20265177
+- 본 제휴 링크는 트립닷컴에서 발급된 것으로, 실제 추적·수수료 지급 여부는 파트너 대시보드에서 확인하세요.
+- Next.js 15.5.9 / React 19.1.2 보안 업데이트 반영.

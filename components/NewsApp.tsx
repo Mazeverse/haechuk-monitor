@@ -47,7 +47,7 @@ export default function NewsApp() {
     const next = saved.includes(id) ? saved.filter(x => x !== id) : [...saved, id];
     setSaved(next); localStorage.setItem("hm-saved", JSON.stringify(next));
   }
-  const affiliateUrl = process.env.NEXT_PUBLIC_AFFILIATE_URL;
+  const affiliateUrl = process.env.NEXT_PUBLIC_AFFILIATE_URL || "https://kr.trip.com/things-to-do/detail/109947208?Allianceid=4775205&SID=333720843&trip_sub1=해축모니터&trip_sub3=D20265177";
   return <div className="site">
     <header className="header"><div className="shell headerContent">
       <div className="brand"><div className="mark"><Trophy size={23}/></div><div><div className="brandName">해축<span>모니터</span><span className="liveDot"/></div><div className="brandSub">HAECHUK MONITOR</div></div></div>
@@ -79,8 +79,8 @@ export default function NewsApp() {
         </div>
         {!loading && !error && <p className="feedNotice">기사 제목과 미리보기는 제공처의 뉴스 피드를 통해 표시됩니다. 자세한 내용은 원문 링크에서 확인하세요.</p>}
         <div className="adSlot">
-          <div className="adLabel">PARTNER · 제휴 안내</div>
-          <div className="adBody"><div className="adIcon">✈</div><div className="adText"><strong>축구 직관 여행을 계획하고 있나요?</strong><span>경기 입장권과 여행 상품을 살펴보세요.</span></div>
+          <div className="adLabel">AD · 트립닷컴 제휴 링크 · 구매 시 수수료를 받을 수 있습니다</div>
+          <div className="adBody"><div className="adIcon">✈</div><div className="adText"><strong>아틀레티코 마드리드 직관을 계획하고 있나요?</strong><span>트립닷컴에서 아틀레티코 마드리드 경기 입장권을 확인하세요.</span></div>
             {affiliateUrl ? <a href={affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className="adButton">상품 보기 <ArrowUpRight size={15}/></a> : <span className="adPending">제휴 링크 준비 중</span>}
           </div>
         </div>

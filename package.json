@@ -1,4 +1,3 @@
-
 {
   "name": "haechuk-monitor",
   "version": "0.1.0",
@@ -9,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.5.7",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "15.5.9",
+    "react": "19.1.2",
+    "react-dom": "19.1.2",
     "rss-parser": "3.13.0",
     "lucide-react": "^0.468.0"
   },
