@@ -1,0 +1,10 @@
+{
+  "name": "해축모니터",
+  "short_name": "해축모니터",
+  "description": "해외축구와 K리그 최신 뉴스",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c1412",
+  "theme_color": "#101b18",
+  "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
